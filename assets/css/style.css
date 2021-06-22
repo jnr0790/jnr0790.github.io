@@ -435,6 +435,19 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.download {
+  
+}
+.btn {
+  background: #785078;
+  color: #fff;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  background: #b362b3;
+  color: #fff;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
