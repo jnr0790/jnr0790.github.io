@@ -39,6 +39,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Bootstrap Toggle -->
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+    rel="stylesheet">
+
   <!-- =======================================================
   * Template Name: Personal - v2.5.1
   * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
@@ -57,13 +61,22 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       <h2>I'm a <span>full-stack developer</span> from Washington DC</h2>
+      <h2>Soy un <span>ingeniero de software</span> de Washington DC</h2>
 
       <nav class="nav-menu d-none d-lg-block">
-        <ul>
+        <ul class="eng">
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#portfolio">Projects</a></li>
+          <li id="spanish"><a href="#">Español</a></li>
+        </ul>
+        <ul class="esp">
+          <li class="active"><a href="#header">Inicio</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Proyectos</a></li>
+          <li id="english"><a href="#">English</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -84,8 +97,10 @@
     <div class="about-me container">
 
       <div class="section-title">
-        <h2>About</h2>
-        <p>More about me</p>
+        <h2 class="eng">About Me</h2>
+        <p class="eng">More about me</p>
+        <h2 class="esp">Sobre Mi</h2>
+        <p class="esp">Mas sobre mi</p>
       </div>
 
       <div class="row">
@@ -93,25 +108,37 @@
           <img src="assets/img/me.jpg" class="img-fluid" alt="Juan">
         </div> -->
         <div class="col-lg-5 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Software Developer</h3>
+          <h3 class="eng">Software Developer</h3>
+          <h3 class="esp">Ingeniero de Software</h3>
           <!-- <p class="font-italic">
           </p> -->
           <div class="row">
             <div class="col-lg-8">
               <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Location:</strong> Lanham, MD</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Languages:</strong> English, Spanish</li>
+                <li class="eng"><i class="icofont-rounded-right"></i> <strong>Location:</strong> Lanham, MD</li>
+                <li class="eng"><i class="icofont-rounded-right"></i> <strong>Languages:</strong> English, Spanish</li>
+                <li class="esp"><i class="icofont-rounded-right"></i> <strong>Localidad:</strong> Lanham, MD</li>
+                <li class="esp"><i class="icofont-rounded-right"></i> <strong>Idiomas:</strong> Ingles, Español</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos"fade-left">
-          <p>
+          <p class="eng">
             I've always been interested in web development since the days of MySpace, using HTML to add my own twist to
             my profile.
             The decision to transition into web development wasn't easy but it was necessary and enjoyable.
             When not learning about syntax, I'm a traveler, mountain biker, and a beat maker.
             I'm excited for the possibilities that come with this profession and will enjoy every step of it.
+          </p>
+          <p class="esp">
+            Yo siempre he estado interesado en la ingeniería de software desde los dias de MySpace, usando HTML para
+            poner
+            mi propio sabor a mi perfil.
+            La decisión de hacer la transición a la ingeniería de software no fue fácil, pero fue necesaria
+            y agradable.
+            Cuando no estoy estudiando de sintaxis, soy viajero, ciclista de montaña, y musico.
+            Estoy emocionado por las posibilidades que traiga este profesión y disfrutaré cada paso de ella.
           </p>
         </div>
       </div>
@@ -123,8 +150,10 @@
     <div class="interests container">
 
       <div class="section-title">
-        <h2>Skills</h2>
-        <p>Skills</p>
+        <h2 class="eng">Skills</h2>
+        <p class="eng">Skills</p>
+        <h2 class="esp">Habilidades</h2>
+        <p class="esp">Habilidades</p>
       </div>
 
       <div class="row">
@@ -207,14 +236,17 @@
     <!-- ======= Contact ======= -->
     <div class="contact container">
       <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
+        <h2 class="eng">Contact</h2>
+        <p class="eng">Contact Me</p>
+        <h2 class="esp">Contacto</h2>
+        <p class="esp">Contáctame</p>
       </div>
       <div class="row mt-2">
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-share-alt"></i>
-            <h3>Profiles</h3>
+            <h3 class="eng">Profiles</h3>
+            <h3 class="esp">Perfiles</h3>
             <div class="social-links">
               <a href="https://github.com/jnr0790" target="_blank" class="google-plus"><i
                   class="devicon-github-original"></i></a>
@@ -226,7 +258,8 @@
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
+            <h3 class="eng">Email Me</h3>
+            <h3 class="esp">Correo Electrónico</h3>
             <p>
               <a href="mailto:jromero0790@gmail.com">jromero0790@gmail.com</a>
             </p>
@@ -242,51 +275,71 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
+        <h2 class="eng">Resume</h2>
+        <p class="eng">Check My Resume</p>
+        <p class="esp">Revisa Mi Resume</p>
         <a class="download" href="./assets/resume/Juan Romero Full-Stack Developer.pdf"
           download="Juan Romero Full-Stack Developer">
-          <button type="button" class="btn">Download Resume</button>
+          <button type="button" class="btn eng">Download Resume</button>
+          <button type="button" class="btn esp">Descarga Mi Resume</button>
         </a>
       </div>
 
       <div class="row">
         <div class="col-lg-6">
-          <h3 class="resume-title">Summary</h3>
+          <h3 class="resume-title eng">Summary</h3>
+          <h3 class="resume-title esp">Sumario</h3>
           <div class="resume-item pb-0">
             <h4>Juan Romero</h4>
-            <p>
+            <p class="eng">
               <em>
-                I am a Software Engineer with previous experience in Logistics and Bicycle Repairs
-                that is always looking to meet and exceed expectations. My experiences taught me to quickly
-                pick up new technologies and adjust to changes while remaining composed in demanding work
-                environments. I’m eager to combine my organizational and problem solving skills from my
-                past experiences with Software Engineering.
+                I am a bilingual Software Engineer with previous experience in Logistics and Bicycle Repairs that is
+                always looking to meet and exceed expectations. My experiences taught me to quickly pick up new
+                technologies and adjust to changes while remaining composed in demanding work environments. I’m eager to
+                combine my organizational and problem solving skills from my past experiences with Software Engineering.
+              </em>
+            </p>
+            <p class="esp">
+              <em>
+                Soy un Ingeniero de Software bilingue con experencia previa en Logística y Reparación de
+                Bicicletas que siempre busca cumplir y superar las expectativas. Mis experencias me enseñaron a aprender
+                nuevas tecnologías rápidamente y adaptarme a cual quier cambio mientras manteniendo calma en trabajos
+                exigentes. Estoy listo para combinar mis habilidades organizativas y de resolviendo problemas de mis
+                experiencias pasadas con Ingenieria de Software.
               </em>
             </p>
           </div>
 
-          <h3 class="resume-title">Education</h3>
+          <h3 class="resume-title eng">Education</h3>
+          <h3 class="resume-title esp">Educación</h3>
           <div class="resume-item">
-            <h4>Software Engineer Immersive</h4>
-            <h5>March 2021 - June 2021</h5>
-            <p><em>General Assembly, Remote</em></p>
-            <p>
+            <h4 class="eng">Software Engineer Immersive</h4>
+            <h5 class="eng">March 2021 - June 2021</h5>
+            <p class="eng"><em>General Assembly, Remote</em></p>
+            <p class="eng">
               Software engineering immersive. 12-week, program focused on real world software experience
               and utilizing tools such as Git/Github, HTML, CSS, JavaScript, Node, MongoDB, PostgreSQL, Python, React,
               Django, Bootstrap, etc.
+            </p>
+            <h4 class="esp">Inmersiva de Ingenieria de Software</h4>
+            <h5 class="esp">Marzo 2021 - Junio 2021</h5>
+            <p class="esp">
+              Programa de 12 semanas centrado en las experiencias del mundo real de la ingenieria de software utilizando
+              herramientas como Git/Github, HTML, CSS, JavaScript, Node, MongoDB, PostgreSQL, Python, React, Django,
+              Bootstrap, etc.
             </p>
           </div>
 
         </div>
         <div class="col-lg-6">
-          <h3 class="resume-title">Professional Experience</h3>
+          <h3 class="resume-title eng">Professional Experience</h3>
+          <h3 class="resume-title esp">Experiencia Profesional</h3>
           <div class="resume-item">
-            <h4>Software Engineer Immersive</h4>
-            <h5>March 2021 - June 2021</h5>
-            <p><em>General Assembly, Remote</em></p>
-            <p>
-            <ul>
+            <h4 class="eng">Software Engineering Immersive</h4>
+            <h5 class="eng">March 2021 - June 2021</h5>
+            <p class="eng"><em>General Assembly, Remote</em></p>
+            <p class="eng">
+            <ul class="eng">
               <li>Completed 12 weeks of intensive Full Stack Development instruction, learning multiple programing
                 languages, libraries, and frameworks.</li>
               <li>Developed 4 single page applications using RESTful APIs each built within a weeks time individually
@@ -295,12 +348,25 @@
                 or rebasing with local branches.</li>
             </ul>
             </p>
+            <h4 class="esp">Inmersiva de Ingenieria de Software</h4>
+            <h5 class="esp">Marzo 2021 - Junio 2021</h5>
+            <p class="esp"><em>General Assembly, Remoto</em></p>
+            <p class="esp">
+            <ul class="esp">
+              <li>Completi 12 semanas de instruccion intensive de Ingeneria de Software, aprendiendo variadades
+                lenguajes, marcos, bibliotecas de programacion.</li>
+              <li>Developed 4 single page applications using RESTful APIs each built within a weeks time individually
+                and collaboratively using Agile methodology.</li>
+              <li>Utilized Git/GitHub for version control to manage proper code functionality prior to pushing, merging,
+                or rebasing with local branches.</li>
+            </ul>
+            </p>
           </div>
-          <div class="resume-item">
-            <h4>Maintenance Technician II</h4>
-            <h5>November 2017 - April 2020</h5>
-            <p><em>Jump Mobility, Washington DC</em></p>
-            <p>
+          <div class="resume-item eng">
+            <h4 class="eng">Maintenance Technician II</h4>
+            <h5 class="eng">November 2017 - April 2020</h5>
+            <p class="eng"><em>Jump Mobility, Washington DC</em></p>
+            <p class="eng">
             <ul>
               <li>Tracked e-bike repairs across the DMV area using Jump’s internal software.</li>
               <li>Used excel to document and organize inventory of supplies in storage for ease of access.</li>
@@ -311,11 +377,11 @@
             </ul>
             </p>
           </div>
-          <div class="resume-item">
-            <h4>Shipping & Receiving Lead</h4>
-            <h5>June 2015 - July 2018</h5>
-            <p><em>REI, Washington DC</em></p>
-            <p>
+          <div class="resume-item eng">
+            <h4 class="eng">Shipping & Receiving Lead</h4>
+            <h5 class="eng">June 2015 - July 2018</h5>
+            <p class="eng"><em>REI, Washington DC</em></p>
+            <p class="eng">
             <ul>
               <li>Logged and tracked inventory from multiple shipments a day. Managed all online records using SAP.</li>
               <li>Processed and packaged shipments for return to a distribution center in a fast paced environment.</li>
@@ -336,8 +402,10 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Projects</h2>
-        <p>Software Development Projects</p>
+        <h2 class="eng">Projects</h2>
+        <p class="eng">Software Development Projects</p>
+        <h2 class="esp">Proyectos</h2>
+        <p class="esp">Proyectos de Ingenieria de Software</p>
       </div>
 
       <div class="row portfolio-container">
@@ -347,9 +415,9 @@
             <img src="assets/img/portfolio/evnt-v1.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Evnt</h4>
-              <p>Full-stack project utilizing PostgreSQL, Python, Django, and jQuery.</p>
-              <p>Evnt app allows users to create events and post them on a map.</p>
-              <p>Still In Development</p>
+              <p class="eng">Full-stack project utilizing PostgreSQL, Python, Django, and jQuery.</p>
+              <p class="eng">Evnt app allows users to create events and post them on a map.</p>
+              <p class="eng">Still In Development</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/evnt-v1.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i
                     class="bx bx-plus"></i></a>
@@ -363,9 +431,9 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/facespace-v1.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>FaceSpace</h4>
-              <p>Full-stack team project using MongoDB, Mongoose, Express, React, Bootstrap, and CSS.</p>
-              <p>FaceSpace is a social network website where you can post and thoughts/ideas to share.</p>
+              <h4 class="eng">FaceSpace</h4>
+              <p class="eng">Full-stack team project using MongoDB, Mongoose, Express, React, Bootstrap, and CSS.</p>
+              <p class="eng">FaceSpace is a social network website where you can post and thoughts/ideas to share.</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/facespace-v1.png" data-gall="portfolioGallery" class="venobox"
                   title="Web 3"><i class="bx bx-plus"></i></a>
@@ -380,9 +448,9 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/bikeinventory-v1.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Bike Inventory</h4>
-              <p>Full-stack project working with MongoDB, Mongoose, Express, jQuery, HTML, and CSS.</p>
-              <p>Bike inventory is an app where you can keep track of the multiple bicycles you may own.</p>
+              <h4 class="eng">Bike Inventory</h4>
+              <p class="eng">Full-stack project working with MongoDB, Mongoose, Express, jQuery, HTML, and CSS.</p>
+              <p class="eng">Bike inventory is an app where you can keep track of the multiple bicycles you may own.</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/bikeinventory-v1.png" data-gall="portfolioGallery" class="venobox"
                   title="App 2"><i class="bx bx-plus"></i></a>
@@ -396,9 +464,9 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/tictactoe-v1.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Tic Tac Toe</h4>
-              <p>Front-end project using HTML, JavaScript, and CSS.</p>
-              <p>Tic Tac Toe with a hint of PacMan inspiration</p>
+              <h4 class="eng">Tic Tac Toe</h4>
+              <p class="eng">Front-end project using HTML, JavaScript, and CSS.</p>
+              <p class="eng">Tic Tac Toe with a hint of PacMan inspiration</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/tictactoe-v1.png" data-gall="portfolioGallery" class="venobox"
                   title="Card 2"><i class="bx bx-plus"></i></a>
@@ -413,7 +481,7 @@
     </div>
   </section><!-- End Portfolio Section -->
 
-  <div class="credits">
+  <div class="credits eng">
     <!-- All the links in the footer should remain intact. -->
     <!-- You can delete the links only if you purchased the pro version. -->
     <!-- Licensing information: https://bootstrapmade.com/license/ -->
